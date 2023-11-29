@@ -49,5 +49,24 @@ int main(int argc, char const *argv[])
         printf("\n");
     }
 
+    int m3[n][n];
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            m3[i][j] = m1[i][j] + m2[i][j];
+        }
+    }
+
+    puts("\nLa suma de la matriz 1 + la matriz 2 es: ");
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            printf("%d\t", m3[i][j]);
+        }
+        printf("\n");
+    }
+
     return 0;
 }
